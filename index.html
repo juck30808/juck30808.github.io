@@ -35,14 +35,11 @@
             <span aria-hidden="true">&times;</span>
         </button>
         <ul class="nav navbar-nav navbar-right">
-            <!---
             <li><a href="./index.html#Experiences" title="" class="anchor-link">Experiences</a></li>
             <li><a href="./index.html#Projects" title="" class="anchor-link">Projects</a></li>
+            <li><a href="./index.html#Content" title="" class="anchor-link">Content</a></li>
             <li><a href="./index.html#Contact" title="" class="anchor-link">Contact</a></li>
-            <li><a href="./index.html#contact-section-container" title="" class="anchor-link">Plan</a></li>
-            <li><a href="./index.html#PlanB" title="" class="anchor-link">PlanB</a></li>
-            <li><a href="./index.html#PlanC" title="" class="anchor-link">PlanC</a></li>
-            <li><p><a href="./index.en.html" class="btn btn-default navbar-btn" >中文</a></p></li>--->
+            <li><p><a href="./index.en.html" class="btn btn-default navbar-btn" >中文</a></p></li>
         </ul>
       </div>
     </div>
@@ -137,12 +134,12 @@
 
 
 <!------------Project 1 ------------>
-<div class="section-container section-half-background-image-container">
+<div class="section-container section-half-background-image-container" id="Projects">
     <div class="image-column" style="background-image: url('./assets/images/img-01.jpg')"></div>
     <div class="container">
         <div class="row">
             <div class="section-label reveal">
-                <p>Language</p>
+                <p>LiveChat</p>
             </div>
             <div class="col-md-6 col-md-offset-6 text-column">
                 <h2>Youtube Live Chat</h2>
@@ -171,28 +168,28 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-3">
-                <!---<img src="./assets/images/img-02.jpg" alt="" class="img-responsive">--->
+                <img src="./assets/images/a1-Project1.png" alt="" class="img-responsive">
                 <h3 class="text-center">Extract</h3>
                 <!----使用 Google Cloud Platform 中提供的 YouTube Data API 搭配爬蟲，將頻道使用者的訂閱狀況、影片觀看表現、觀眾樣貌以及聊天室內容抓取下來，放入 MySQL 中做儲存--->
                 <p>Used Google Cloud Platform, YouTube Data API and crawlers to capture channel subscription status, 
                     video views, audience appearance and chat room content. stored them in MySQL</p>
             </div>
             <div class="col-xs-12 col-md-3">
-                <!---<img src="./assets/images/img-03.jpg" alt="" class="img-responsive">--->
+                <img src="./assets/images/a1-Project2.png" alt="" class="img-responsive">
                 <h3 class="text-center">Transform</h3>
                 <!---利用 Python 提取資料庫資料，完成資料清洗與欄目分類，並且採用正規表達式分解不同語系的語言，分離出英文、繁體中文、簡體中文等不同文字----->
                 <p>Used Python to extract database data, and completed data cleaning and column classification. 
                     Regular expressions to separate English, traditional Chinese, simplified Chinese and other different characters.</p>
             </div>
             <div class="col-xs-12 col-md-3">
-                <!---<img src="./assets/images/img-04.jpg" alt="" class="img-responsive">--->
+                <img src="./assets/images/a1-Project3.png" alt="" class="img-responsive">
                 <h3 class="text-center">Natural Language</h3>
                 <!----使用 NLP 訓練模型，例如 NLTK 和 Jieba 進行文本訓練，透過統計分析，持續修正語切割字詞語段落，並修正模型性能--->
                 <p>Used NLP training models, such as NLTK and Jieba for text training, through statistical analysis, 
                     increased the model words and paragraphs cut accuracy. correction of model performed.  </p>
             </div>
             <div class="col-xs-12 col-md-3">
-                <!---<img src="./assets/images/img-04.jpg" alt="" class="img-responsive">--->
+                <img src="./assets/images/a1-Project4.png" alt="" class="img-responsive">
                 <h3 class="text-center">Load and Export</h3>
                 <!----統計字詞出現頻率，利用 Apriori 分析字詞間的相關性，並將分析結果利用 xlwings 或是 openpyxl 方式自動匯出為 Excel 報表，完成本次專案分析。-->
                 <p>Counted the frequency of word occurrences, used Apriori to analyze the correlation between words and automatically exported the analysis results to an Excel report by xlwings or openpyxl.</p>
@@ -202,11 +199,11 @@
 </div>
 
 
-<div class="section-container">
+<div class="section-container" id="Content">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12 section-container-spacer">
-                <h2 class="text-center">Others</h2>
+                <h2 class="text-center">Content</h2>
             </div>
         </div>
         <div class="row">
@@ -263,9 +260,7 @@
 
 
 
-
-
-<div class="">
+<div class=""  id="Contact">
     <div class='container-fluid'>
         <div class="row map-container">
             <div id="map"></div>
