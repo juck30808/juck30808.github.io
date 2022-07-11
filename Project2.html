@@ -7,23 +7,19 @@
                 <p>Associative</p>
             </div>
             <div class="col-md-6 col-md-offset-6 text-column">
-                <h2>Youtube Live Chat</h2>
-                <h3>Python, MySQL, NLP</h3>
+                <h2>Cosmetic Trend Analysis</h2>
+                <h3>Python, Tableau, NLP</h3>
                 <!---『核心問題：疫情期間的政策是否影響美妝商品銷售』，隨著 covide-19 疫情發展，各個國家有各項政策出現，
-                    以台灣為例，政府要求所有人需要固定配戴口罩，目前疫情期間可見的結果為減少出門消費，且女性化妝需求降低，以此背景下更進一步了解，
-                    美妝產品的關注是否受到疫情影響，此外藉由關聯性分析，了解網路最常討論的品牌，以及最常討論的美妝商品，了解使用者需求。-->
+                    台灣政府要求所有人需要固定配戴口罩，目前可見的結果為民眾減少出門消費，遠距離辦公需求增加，女性化妝需求降低，以此背景下更進一步了解，
+                    美妝產品的關注是否受到疫情影響，藉由關聯性分析，了解網路最常討論的品牌，以及最常討論的美妝商品，了解使用者需求。-->
                 <p>
-                    "Objective: Audience Interaction Tracking During Live Streaming",
-                    <br><br>In recent years, the rise of Tiktok short videos, short videos and live broadcasts have 
-                    become the strongest e-commerce models.Quickly accumulate fans through lively and creative content, 
-                    and create more interaction, marketing and sales with live broadcasts. 
-                    <br><br>The problem encountered by the current live broadcast mode is how to understand the feedback content of the audience when 
-                    there are more than 10,000 people online at the same time and a large number of fans interact in the live broadcast.
+                    "Core Objective : Did the COVID-19 affect the sales of beauty products?",
+                    <br><br>COVID-19 has affected our day to day life, Taiwan government announce to actions taken by wearing a mask, staying home and remote work. To help reduce the transmission of COVID-19 in communities. The result is that people are spending less money outside their homes,  and the demand for women's makeup has decreased. 
+                    <br><br>In this context, we want understand whether the beauty products is affected by COVID-19. I can use correlation analysis to know the most frequently discussed brands on the Internet and the most frequently discussed beauty products to understand users' needs.
                     <br><br>In addition to increasing the visibility of messages through sponsorship, I also hope to use natural language analysis to understand the audience's thoughts and conduct long-term tracking to increase the conversion rate.
                 </p>
                 <!----此專案藉由台灣的論壇 PTT, Dcard (類似台灣的 Reddit) 爬蟲。抓取美妝議題的討論的內容做分析-->
-                <p>This project uses Youtube Live Chat as an example to capture the interactive content of the chat 
-                    room audience during the live broadcast</p>
+                <p>This project uses crawler to the Taiwan forum PTT, Dcard (similar to Taiwan's Reddit) . Crawl the content of cosmetic topic discussions for analysis</p>
             </div>
         </div>
     </div>
@@ -32,29 +28,29 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-3">
-                <img src="./assets/images/a1-Project1.png" alt="" class="img-responsive">
+                <img src="./assets/images/ProjectB1.png" alt="" class="img-responsive">
                 <h3 class="text-center">1.Extract</h3>
-                <!----當提及 Lancome 大家討論最熱烈的商品。--->
+                <!----利用 Beautiful Soup 將提取最新的論壇討論，解析出論壇中每一篇文章的 ID，並且串接平台提供的 API 撈取每一篇文章的內容。--->
                 <p>Used Google Cloud Platform, YouTube Data API and crawlers to capture channel subscription status, 
                     video views, audience appearance and chat room content. stored them in MySQL</p>
             </div>
             <div class="col-xs-12 col-md-3">
-                <img src="./assets/images/a1-Project2.png" alt="" class="img-responsive">
-                <h3 class="text-center">2.Transform</h3>
-                <!---當提及 Lancome 大家討論最熱烈的商品。----->
+                <img src="./assets/images/ProjectB2.png" alt="" class="img-responsive">
+                <h3 class="text-center">2.Transform & Natural Language</h3>
+                <!---利用自然語言分析解構詞語結構，篩選出保養品與商品名稱，清理數據結構。----->
                 <p>Used Python to extract database data, and completed data cleaning and column classification. 
                     Regular expressions to separate English, traditional Chinese, simplified Chinese and other different characters.</p>
             </div>
             <div class="col-xs-12 col-md-3">
-                <img src="./assets/images/a1-Project3.png" alt="" class="img-responsive">
-                <h3 class="text-center">3.Natural Language</h3>
+                <img src="./assets/images/ProjectB3.png" alt="" class="img-responsive">
+                <h3 class="text-center">3.Load and Visualization</h3>
                 <!----當提及 Lancome 大家討論最熱烈的商品。--->
                 <p>Used NLP training models, such as NLTK and Jieba for text training, through statistical analysis, 
                     increased the model words and paragraphs cut accuracy. correction of model performed.  </p>
             </div>
             <div class="col-xs-12 col-md-3">
-                <img src="./assets/images/a1-Project4.png" alt="" class="img-responsive">
-                <h3 class="text-center">4.Load and Export</h3>
+                <img src="./assets/images/ProjectB4.png" alt="" class="img-responsive">
+                <h3 class="text-center">4.Summary Report</h3>
                 <!----統計字詞出現頻率，利用 Apriori 分析字詞間的相關性，並將分析結果利用 xlwings 或是 openpyxl 方式自動匯出為 Excel 報表，完成本次專案分析。-->
                 <p>Counted the frequency of word occurrences, used Apriori to analyze the correlation between words and automatically exported the analysis results to an Excel report by xlwings or openpyxl.</p>
             </div>
